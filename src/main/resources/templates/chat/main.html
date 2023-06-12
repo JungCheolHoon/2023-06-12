@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Example</title>
+    <style>
+        /* 스타일 설정 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .chat-container {
+            border: 1px solid #ccc;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #f8f8f8;
+        }
+
+        .message {
+            margin-bottom: 10px;
+        }
+
+        .message .sender {
+            font-weight: bold;
+        }
+
+        .message .timestamp {
+            font-size: 0.8em;
+            color: #999;
+        }
+
+        .message .content {
+            margin-top: 5px;
+        }
+
+        .input-container {
+            margin-top: 10px;
+        }
+
+        .input-container input[type="text"] {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .input-container input[type="submit"] {
+            margin-top: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="chat-container">
+    <div class="message">
+        <span class="sender">User1:</span>
+        <span class="timestamp">2023-06-08 15:30</span>
+        <div class="content">Hello, how are you?</div>
+    </div>
+    <div class="message">
+        <span class="sender">User2:</span>
+        <span class="timestamp">2023-06-08 15:31</span>
+        <div class="content">I'm doing well, thank you!</div>
+    </div>
+    <!-- 기존 메시지들 -->
+
+    <div class="input-container">
+        <input type="text" placeholder="Type your message">
+        <input type="submit" value="Send">
+    </div>
+    <!-- 입력 폼 -->
+</div>
+</body>
+</html>

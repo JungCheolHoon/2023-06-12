@@ -1,0 +1,23 @@
+spring:
+  thymeleaf:
+    cache: 'false'
+    prefix: classpath:/templates
+    suffix: .html
+  main:
+    web-application-type: servlet
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  datasource:
+    password: webchat!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: webchat
+    url: jdbc:mysql://localhost:3306/webchat
+server:
+  error:
+    whitelabel:
+      enabled: 'false '
+  servlet:
+    context-path: /
+  port: '8200'
